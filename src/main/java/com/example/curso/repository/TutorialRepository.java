@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface TutorialRepository extends JpaRepository<Tutorial, Long> {
     List<Tutorial> findByPublicado(boolean b);
+
+    List<Tutorial> findByTitulo(String titulo);
 }
